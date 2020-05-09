@@ -2,7 +2,7 @@ name: Go
 
 on:
   push:
-    branches: [ Ch02. Ch03 ]
+    branches: [ Ch02 ]
   pull_request:
     branches: [ master ]
 
