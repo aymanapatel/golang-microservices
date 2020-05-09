@@ -3,7 +3,7 @@ name: Go Ch/Feature CI
 on:
   push:
     branches:
-    - '*'
+    - 'Ch*'
 
 jobs:
 
