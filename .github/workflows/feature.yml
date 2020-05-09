@@ -1,4 +1,4 @@
-name: Go Ch/Feature CI
+name: Feature CI workflow
 
 on:
   push:
