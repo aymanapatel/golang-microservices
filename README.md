@@ -1,5 +1,5 @@
 
-# Feature 1: Restful Gousing Gorilla framework
+# Feature 1: Documenting APIs using Swagger/OAS
 
 # Table of Contents
 
