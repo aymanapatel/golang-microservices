@@ -8,10 +8,72 @@
 
 
 # Links
-1. Set up Go Environment and Go modules in VSCode
-[Medium](https://rominirani.com/setup-go-development-environment-with-visual-studio-code-7ea5d643a51a)
 
-2. [Go Modules outside #GO_PATH in Docker](https://devandchill.com/posts/2019/03/go-modules-working-outside-gopath/)
+1. [gRPC docs](https://grpc.io/docs/)
+
+
+# gRPC Introduction
+
+A binary HTTP/2 protocol which is faster and more efficient due to HTTP/2 and compressing of request using Protocol buffers.
+
+![gRPC overiew](https://grpc.io/img/landing-2.svg)
+Support languages/runtimes:
+- Android
+- Java, Kotin/JVM
+- Go
+- .NET/C#
+- Node
+- Web
+- Ruby
+- PHP, Obejective-C, Dart
+
+# gRPC Concepts
+
+# gRPC Miscellaneous
+
+## Error handling
+
+
+### General Errors
+
+|Status Code|Case|
+|--|--|
+|`GRPC_STATUS_CANCELLED`||
+|`GRPC_STATUS_DEADLINE_EXCEEDED`||
+|`GRPC_STATUS_UNIMPLEMENTED`||
+|`GRPC_STATUS_UNAVAILABLE`||
+|`GRPC_STATUS_UNKNOWN`||
+
+
+### Network failures
+
+
+|Status Code|Case|
+|--|--|
+|`GRPC_STATUS_DEADLINE_EXTENSION`||
+|`GRPC_STATUS_UNAVAILABLE`||
+
+### Protocol Errors
+
+|Status Code|Case|
+|--|--|
+|`GRPC_STATUS_INTERNAL`||
+|`GRPC_STATUS_UNIMPLEMENTED`||
+|`GRPC_STATUS_RESOURCE_EXHAUSTED`||
+|`GRPC_STATUS_INTERNAL`||
+|`GRPC_STATUS_UNKNOWN`||
+|`GRPC_STATUS_UNAUTHENTICATED`||
+|`GRPC_STATUS_UNAUTHENTICATED`||
+|`GRPC_STATUS_INTERNAL`||
+|`GRPC_STATUS_INTERNAL`||
+
+### Richer Error Model
+If using Protocol Buffers, you might want to use a richer mdoel developed by (Google)[https://cloud.google.com/apis/design/errors#error_model]
+
+
+## AuthN
+
+## Benchmarking
 
 
 
