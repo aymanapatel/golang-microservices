@@ -1,5 +1,5 @@
 
-# Feature 1: Documenting APIs using Swagger/OAS
+# Feature 1: HTTP Routing and LBing using Envoy
 
 # Table of Contents
 
