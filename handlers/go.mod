@@ -1,3 +1,3 @@
-module github.com/AP/Ch2-GOMS/handlers
+module github.com/AP/Ch3-GOMS/handler
 
 go 1.14
