@@ -1,5 +1,5 @@
 
-# Feature 1: HTTP Routing and LBing using Envoy
+# Feature 5: gRPC
 
 # Table of Contents
 
