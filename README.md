@@ -8,12 +8,39 @@
 
 
 # Links
-1. Set up Go Environment and Go modules in VSCode
-[Medium](https://rominirani.com/setup-go-development-environment-with-visual-studio-code-7ea5d643a51a)
-
-2. [Go Modules outside #GO_PATH in Docker](https://devandchill.com/posts/2019/03/go-modules-working-outside-gopath/)
+1. [Envoy Docs](https://www.envoyproxy.io/docs/envoy/latest/)
+2. [Envoy Homepage](https://www.envoyproxy.io/)
 
 
 
-# Refer Golang doc.
+# Envoy Architecture
 
+
+
+
+## Inbound 
+
+### Listener
+### Filterchain
+
+### Filter
+
+- TCP Proxy
+- HTTP Connection manager
+
+
+## Outbound
+
+## Clusters
+
+## Endpoints
+
+- Static cluster (load_assignment): Example: Config. in YAML/JSON. Better not to use this.
+- Dynamic Cluster ([eds](###eds) _assignment): Example: Istio/Consul connect. 
+
+![Arch.](/pictures/Envoy1.png)
+
+## Upstream clusters
+
+### EDS
+Endpoint Discovery service
