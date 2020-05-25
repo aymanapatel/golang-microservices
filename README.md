@@ -36,7 +36,7 @@
 ## Endpoints
 
 - Static cluster (load_assignment): Example: Config. in YAML/JSON. Better not to use this.
-- Dynamic Cluster ([eds](###eds) _assignment): Example: Istio/Consul connect. 
+- Dynamic Cluster ([eds](#eds) _assignment): Example: Istio/Consul connect. 
 
 ![Arch.](/pictures/Envoy1.png)
 
