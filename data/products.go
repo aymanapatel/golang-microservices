@@ -1,8 +1,6 @@
 package data
 
 import (
-	"encoding/json"
-	"io"
 	"time"
 )
 
@@ -21,22 +19,16 @@ type Product struct {
 // Products https:// Array of Product
 type Products []*Product
 
-// ToJSON https://
-func (p *Products) ToJSON(w io.Writer) error {
-	e := json.NewEncoder(w)
-	return e.Encode(p)
-}
-
-// GetProducts returns a list of products
-func GetProducts() Products {
+// GetProductsInterface: returns a list of products
+// Can swap out hard-coded values with DB i future
+func GetProductsInterface() Products {
 	return productList
 }
 
-/* Marshalling
+// Marshalling
 func GetProducts() []*Product {
 	return productList
 }
-*/
 
 var productList = []*Product{
 	&Product{

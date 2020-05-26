@@ -7,8 +7,7 @@ import (
 	"os"
 	"os/signal"
 	"time"
-
-	"github.com/AP/Ch3-GOMS/handlers"
+	"github.com/AymanArif/golang-microservices/handlers"
 )
 
 func main() {
@@ -51,7 +50,9 @@ func main() {
 	signal.Notify(sigChan, os.Kill)      // Broadcast message when OS.Signal gives os.Kill
 
 	sig := <-sigChan // Block channel till message is available to be consumed
-	l.Println("Recieved terminate, graceful shutdown ", sig)
+
+	l.Println("Exit started \n----------------Exiting------------------\n")
+	l.Println("\n Recieved terminate, graceful shutdown \n ", sig)
 
 	tc, _ := context.WithTimeout(context.Background(), 30*time.Second)
 	s.Shutdown(tc)

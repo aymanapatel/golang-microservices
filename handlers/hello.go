@@ -19,12 +19,13 @@ func NewHello(l *log.Logger) *Hello {
 
 func (h *Hello) ServeHTTP(rw http.ResponseWriter, r *http.Request) {
 
-	h.l.Println("Decompsoited with go-mods: Hello world. ") // Use h.l.Println() for better testability and future DI work. log.Println("Hello world")
 	d, err := ioutil.ReadAll(r.Body)
-	//log.Println("Hello birthday to %s ", d) // IP: AYM, OP: [65 95 .. ..]
+	
+	h.l.Println("Println: Hello ", string(d))  // Use h.l.Println() (instead of log.Println) for better testability and future DI work. log.Println("Hello world")
+
 	if err != nil {
 		http.Error(rw, "Oops", http.StatusBadRequest)
 	}
 
-	fmt.Fprintf(rw, "Decomposited Hello with go-mods:  %s \n", d)
+	fmt.Fprintf(rw, "ResponseWriter:  Hello %s \n", d)
 }

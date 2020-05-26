@@ -16,6 +16,6 @@ func NewGoodbye(l *log.Logger) *Goodbye {
 }
 
 func (g *Goodbye) ServeHTTP(rw http.ResponseWriter, r *http.Request) {
-	g.l.Println("Decompsoited with go-mods: Goodbye. ")
-	rw.Write([]byte("Decompsoited with go-mods: Goodbye\n"))
+	g.l.Println("Println: Goodbye. ")
+	rw.Write([]byte("Response Writer: Goodbye\n"))
 }
