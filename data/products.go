@@ -1,6 +1,8 @@
 package data
 
 import (
+	"encoding/json"
+	"io"
 	"time"
 )
 
@@ -25,9 +27,10 @@ func GetProductsInterface() Products {
 	return productList
 }
 
-// Marshalling
-func GetProducts() []*Product {
-	return productList
+// Encoding
+func (p *Products) ToJSON(w io.Writer) error {
+	encoder := json.NewEncoder(w)
+	return encoder.Encode(p)
 }
 
 var productList = []*Product{

@@ -1,7 +1,6 @@
 package handlers
 
 import (
-	"encoding/json"
 	"log"
 	"net/http"
 
@@ -21,14 +20,28 @@ func NewProducts(l *log.Logger) *Products {
 // ServeHTTP is the main entry point for the handler and staisfies the http.Handler
 // interface
 func (p *Products) ServeHTTP(rw http.ResponseWriter, r *http.Request) {
-	/* Marshalling */
-	lp := data.GetProductsInterface()
-	d, err := json.Marshal(lp) // Marshalling. READ MARSHAL(SLOWER) VS ENCODER(FAST)
 
-	if err != nil {
-		http.Error(rw, "Unable to marshal JSON", http.StatusInternalServerError)
+	// handle the request for a list of products
+	if r.Method == http.MethodGet {
+		p.getProducts(rw, r)
+		return
 	}
 
-	rw.Write(d)
+	// catch all
+	// if no method is satisfied return an error
+	rw.WriteHeader(http.StatusMethodNotAllowed)
+}
 
+// getProducts returns the products from the data store
+func (p *Products) getProducts(rw http.ResponseWriter, r *http.Request) {
+	p.l.Println("Println: Handle GET Products")
+
+	// fetch the products from the datastore
+	lp := data.GetProductsInterface()
+
+	// serialize the list to JSON
+	err := lp.ToJSON(rw) // READ MARSHAL(SLOWER) VS ENCODER(FAST)
+	if err != nil {
+		http.Error(rw, "Unable to marshal json", http.StatusInternalServerError)
+	}
 }
