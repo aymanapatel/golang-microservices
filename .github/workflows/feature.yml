@@ -3,7 +3,7 @@ name: Feature CI workflow
 on:
   push:
     branches:
-    - 'Ch*'
+    - 'feature*'
 
 jobs:
 
