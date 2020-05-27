@@ -10,12 +10,16 @@
 
 # API Specification
 
-|API|curl|
-|--|--|
-|/|`curl http://localhost:9090`|
-|/hello| `curl http://localhost:9090/hello -d 'Ayman'`|
-|/goodbye|`curl http://localhost:9090/goodbye`|
-|/products|`curl http://localhost:9090/products | jq`|
+|API|Verb|curl|
+|--|--|--|
+|/||`curl http://localhost:9090`|
+|/hello||`curl http://localhost:9090/hello -d 'Ayman'`|
+|/goodbye||`curl http://localhost:9090/goodbye`|
+|/products|GET|`curl http://localhost:9090/products | jq`|
+|/products|POST|`curl -v http://localhost:9090/products -d '{}'| jq`|
+|/products|PUT|`curl -v http://localhost:9090/products -d '{}'| jq`|
+|/products|POST|`curl -v  localhost:9090/1 -XPUT -d '{"name":"asfsdsyman"}'| jq`|
+
 
 # Links
 
