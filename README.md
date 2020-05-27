@@ -10,6 +10,7 @@
 # Links
 
 1. [gRPC docs](https://grpc.io/docs/)
+2. [Intro to gRPC](https://www.youtube.com/watch?v=QyxCX2GYHxk)
 
 
 # gRPC Introduction
