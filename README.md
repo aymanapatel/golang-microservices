@@ -8,11 +8,7 @@
 
 
 # Links
-1. Set up Go Environment and Go modules in VSCode
-[Medium](https://rominirani.com/setup-go-development-environment-with-visual-studio-code-7ea5d643a51a)
-
-2. [Go Modules outside #GO_PATH in Docker](https://devandchill.com/posts/2019/03/go-modules-working-outside-gopath/)
-
+1. [Go Swagger](https://medium.com/@pedram.esmaeeli/generate-swagger-specification-from-go-source-code-648615f7b9d9)
 
 
 # Refer Golang doc.
