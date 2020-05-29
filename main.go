@@ -51,8 +51,7 @@ func main() {
 
 	sig := <-sigChan // Block channel till message is available to be consumed
 
-	l.Println("Exit started \n----------------Exiting------------------\n")
-	l.Println("\n Recieved terminate, graceful shutdown \n ", sig)
+	l.Println("Exit started \n----------------Exiting------------------\n Recieved terminate, graceful shutdown \n", sig)
 
 	tc, _ := context.WithTimeout(context.Background(), 30*time.Second)
 	s.Shutdown(tc)
