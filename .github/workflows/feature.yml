@@ -3,14 +3,17 @@ name: Feature CI workflow
 on:
   push:
     branches:
-    - 'Ch*'
+    - 'feature*'
 
 jobs:
 
   build:
     name: Build
     runs-on: ubuntu-latest
+    
+
     steps:
+
 
     - name: Set up Go environment
       uses: actions/setup-go@v2.0.3
@@ -34,3 +37,6 @@ jobs:
 
     - name: Test
       run: go test -v .
+      
+    - name: Finished
+      run: echo "Finished running feature69 brnach"  
