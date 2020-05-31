@@ -1,3 +1,4 @@
+![](https://github.com/AymanArif/golang-microservices/workflows/Go/badge.svg)
 
 # Feature 0: Setup Go
 
