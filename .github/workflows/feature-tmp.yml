@@ -1,4 +1,4 @@
-name: Feature CI workflow
+name: Delete
 
 on:
   push:
