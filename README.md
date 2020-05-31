@@ -1,3 +1,4 @@
+![](https://github.com/AymanArif/golang-microservices/workflows/Feature%20CI%20workflow/badge.svg)
 
 # Feature 1: RESTful GO
 
