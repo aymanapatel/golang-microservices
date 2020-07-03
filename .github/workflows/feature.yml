@@ -1,4 +1,4 @@
-name: Feature CI 
+name: Feature CI workflow
 
 on:
   push:

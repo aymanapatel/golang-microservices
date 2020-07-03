@@ -12,6 +12,7 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
+    - uses: codecov/codecov-action@v1
 
     - name: Set up Go environment
       uses: actions/setup-go@v2.0.3
