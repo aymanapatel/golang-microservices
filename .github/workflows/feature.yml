@@ -1,4 +1,4 @@
-name: Feature CI workflow
+name: Feature Gorilla Framework workflow
 
 on:
   push:
