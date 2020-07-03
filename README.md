@@ -7,7 +7,18 @@
 
 
 
+
+
+curl localhost:9090/ -X POST -d '{"name": "Tfdea"}'
+curl localhost:9090/
+curl localhost:9090/{id} -X POST -d '{"name": "Tea"}'
+
+
+
+
 # Links
-1. Gorilla Bramework
+1. Gorilla Framework
+    - https://www.gorillatoolkit.org/pkg/mux
+
 2. Blogs
 
