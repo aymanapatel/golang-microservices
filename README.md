@@ -15,6 +15,7 @@
 
 # Envoy Architecture
 
+![Envoy Architecture](pictures/EnvoyArchitecture.png)
 
 
 
