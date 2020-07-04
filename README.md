@@ -4,6 +4,20 @@
 # Table of Contents
 
 - [Links](#links)
+- [Envoy Architecture](#envoy-architecture)
+  * [Inbound](#inbound)
+    + [Listener](#listener)
+    + [Filterchain](#filterchain)
+    + [Filter](#filter)
+  * [Outbound](#outbound)
+  * [Clusters](#clusters)
+  * [Endpoints](#endpoints)
+  * [Upstream clusters](#upstream-clusters)
+    + [EDS](#eds)
+- [Containers](#containers)
+  * [TCP Load balancing](#tcp-load-balancing)
+- [Steps to run](#steps-to-run)
+- [Tools used](#tools-used)
 
 
 
