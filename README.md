@@ -45,12 +45,31 @@
 Endpoint Discovery service
 
 
+# Containers
+
+
+## TCP Load balancing
+1. Container
+  - api1
+  - api2
+  - envoy
+
+2. Network
+  - local
+  
+3. Ingress
+  - frontend (fake-service-0.8.0)
+
+
 # Steps to run
 
-1. `shipyard run ./tcp-loadbalancing` : To add docker containers specified
+1. `shipyard run ./tcp-loadbalancing` :  Destroy Container (api1, api2 and envoy), Network(local) and Ingress(frontend)
 2. `curl localhost` : Test Load balancing
+3. `shipyard destroy` : Destroy Container, Network and Ingress
 
 
 # Tools used
 
 https://shipyard.run/docs/install/ : CLI
+
+
