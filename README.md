@@ -45,6 +45,11 @@
 Endpoint Discovery service
 
 
+# Steps to run
+
+1. `shipyard run ./tcp-loadbalancing` : To add docker containers specified
+2. `curl localhost` : Test Load balancing
+
 
 # Tools used
 
