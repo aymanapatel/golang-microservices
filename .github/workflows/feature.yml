@@ -1,4 +1,4 @@
-name: Feature CI workflow
+name: Feature Classic RESTful workflow
 
 on:
   push:
