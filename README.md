@@ -20,9 +20,9 @@
 
 ## API 
 
-1. Works `curl localhost:9091/products -X POST -d '{"name": "Tea", "Price": 1.0, "sku":"aada-sdd"}'`
+1. Works `curl localhost:9090/products -X POST -d '{"name": "Tea", "Price": 1.0, "sku":"aada-sdd"}'`
 
-2. Does not work `curl localhost:9091/products -X POST -d '{"name": "Tea", "Price": 1.0, "sku":"aada-sdd-ddf"}'`
+2. Does not work `curl localhost:9090/products -X POST -d '{"name": "Tea", "Price": 1.0, "sku":"aada-sdd-ddf"}'`
 
 
 
