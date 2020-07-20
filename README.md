@@ -1,3 +1,27 @@
+# Go Microservice Project
+
+
+<p align="center">
+  Repository to learn Golang Microservices by building an end-to-end project. <br>
+   🔨 Libraries used: 🔨
+</p>
+
+
+
+<p align="center">
+  <a href="https://miro.medium.com/max/750/1*xLKFtlXiTPif_hTAIlXRjw.jpeg">
+    <img alt="" src="https://miro.medium.com/max/750/1*xLKFtlXiTPif_hTAIlXRjw.jpeg" height="70" width="50" />
+  </a>
+  <a href="https://miro.medium.com/max/750/1*xLKFtlXiTPif_hTAIlXRjw.jpeg">
+    <img alt="" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Swagger-logo.png" height="70" width="70" />
+  </a>    
+  <a href="https://miro.medium.com/max/750/1*xLKFtlXiTPif_hTAIlXRjw.jpeg">
+    <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQGphDpO2--RtpVgIv_UAy9NObzHXWwbSM49wB0q1U_H0sbxQm80ZGrZNnyujl826dQ_XM8NGH-r7nm1Q&usqp=CAU" height="70" width="120" />
+  </a>    
+  
+</p>
+
+
 ![](https://github.com/AymanArif/golang-microservices/workflows/Go/badge.svg)
 
 # Feature 0: Setup Go
