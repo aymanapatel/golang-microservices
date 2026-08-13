@@ -1,3 +1,5 @@
+
+
 # Go Microservice Project
 
 
@@ -43,12 +45,13 @@
 
 ## Demo with `go mod`
 
+```bash
     mkdir my-demo // Create a project folder, or clone a github repository    
     cd my-demo
     touch main.go // Create a file if we are starting the project
     go mod init my-demo // This will initiate the module
     go build // This will build
-`
+```
 Now if you add an import, if VSCODE is configured properly (user.settings), then auto-complete for used imports
 
 # Working
@@ -67,4 +70,3 @@ Do not use `DefaultServeMux`, as it is a global variable. Hence, it is not secur
 
 
 # Refer Golang doc.
-
